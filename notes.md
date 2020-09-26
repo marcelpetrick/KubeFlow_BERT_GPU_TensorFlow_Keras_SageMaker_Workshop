@@ -402,9 +402,28 @@ zipp                               2.2.0
 run this:
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/01_setup/02_Check_Notebook_Instance.ipynb
 
+run all: there should be no visible erros visible!
+"[OK] Great Job!  Please Continue."
 
+---------
 
+run:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/01_setup/03_Create_S3_Bucket.ipynb
 
+default bucket from sagemaker:
+2020-09-26 15:45:13 sagemaker-us-west-2-034358165284
+(last digits are unique for everyone of the attendants)
+---------
+run:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/01_setup/04_Update_IAM_Roles_And_Policies.ipynb
 
+athena? autopilot?
+automated machine learning?!?
 
+"Attached: IAMFullAccess
+[OK] You are all set to continue with this notebook!"
+---------
 
+ususally the least needed privilege is the one to use for working with AWS ..
+"[OK] You are all set up to continue with this workshop!"
+---------
