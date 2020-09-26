@@ -676,6 +676,27 @@ https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/06_prepare/
 - just a scikit processing job
 - "!pygmentize preprocess-scikit-text-to-bert.py"
 
+- single sequence natural language processing task
+- just a generic python processor: SKLearnProcessor
+- splitting the output data into three aws s3 containers
+
+- if the data is not balanced, then a model is created, which is imbalanced
+- check the log of thejob (every print statement appears there: https://us-west-2.console.aws.amazon.com/cloudwatch/home?region=us-west-2#logStream:group=/aws/sagemaker/ProcessingJobs;prefix=sagemaker-scikit-learn-2020-09-26-18-25-10-730)
+
+- todo check this: Early Release of Data Science on AWS Book:  https://datascienceonaws.com (edited) 
+
+-------------
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/07_train/00_Overview.ipynb
+
+(15 min break); but we shall kick of from 07 the 02_train thingy https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/07_train/02_Train_Reviews_BERT_Transformers_TensorFlow_ScriptMode.ipynb
+(which i do)
+
+image: 23_bert_training.png
+
+so 21:00 back!
+
+
 
 
 
