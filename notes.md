@@ -801,5 +801,52 @@ https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/10_pipeline
 
 (5 min break): start the KubeFlow cluster thing before
 
+------------
+meanwhile:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/11_stream/00_Overview.ipynb
+AWS Kinesis (family)
+
+"Continuous Machine Learning over Streaming Data
+Streaming technology provides you with the tools to ingest data as it is generated, process the data on-the-fly, and run real-time analytics on the data which can trigger actions. AWS offers a range of streaming tools as part of the Amazon Kinesis family of services.
+
+Amazon Kinesis Data Streams and Video Streams let you ingest real-time data such as video, audio, application logs, website clickstreams, and IoT data for machine learning, analytics, and other applications. You can process and analyze the data as it arrives with Kinesis Data Analytics and take actions immediately. Kinesis Data Firehose prepares and loads the data continuously to the destination of your choice.
+
+In the following noteboooks, we will show you how you can start implementing continuous machine learning using the Kinesis streaming services.
+
+Create a Kinesis Data Firehose delivery stream to store streaming data in S3.
+Use a Kinesis Data Streams to ingest live customer review data.
+Use Case 1:
+Analyze Streaming Data with Kinesis Data Analytics"
+
+![](35.png)
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/11_stream/01_Setup_IAM.ipynb
+
+![](36_kinesis.png)
+Kinesis, Data Firehose, Redshift
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/11_stream/02_Create_Kinesis_Data_Firehose.ipynb
+
+Amazon Lambda function: just supply python script, it gets executed
+
+run 03, 04, and 05 to create and deploy ..
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/11_stream/06_Put_Reviews_On_Kinesis_Data_Firehose.ipynb
+
+df - dataframe (check this; todo)
+
+lecturers:
+Chris Fregly & Antje Barth
+
+chris advices says: instead of tinkering with kubernertes for 3 years, he actually now "gets stuff done"... and he wants those years back xD
+
+question: does an ML engineer know everything what was shown today? definitely not, but it helps to know what happens left and right
+
+(break 10 min)
+
+- KubeFlow runs atop Kubernetes
+- Kubernetes can scale; also supports GPU
+
+
 
 
