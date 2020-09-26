@@ -530,4 +530,48 @@ augmented AI:
 (10 minute break)
 
 then: workshop/04_ingest/
+https://workshop.notebook.us-west-2.sagemaker.aws/tree/workshop/04_ingest
+
+auto_ml: (from 2)
+https://workshop.notebook.us-west-2.sagemaker.aws/tree/workshop/02_automl/generated_module/candidate_data_processors
+- those dpp python files are feature-engineering-candidates
+
+ingesting the data may differ:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/00_Overview.ipynb
+
+[image 11]
+
+next step:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/01_Copy_TSV_To_S3.ipynb
+
+"To Simulate an Application Writing Into Our Data Lake, We Copy the Public TSV Dataset to a Private S3 Bucket in our Account¶"
+
+"copy: s3://amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Software_v1_00.tsv.gz to s3://sagemaker-us-west-2-034358165284/amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Software_v1_00.tsv.gz
+copy: s3://amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Video_Games_v1_00.tsv.gz to s3://sagemaker-us-west-2-034358165284/amazon-reviews-pds/tsv/amazon_reviews_us_Digital_Video_Games_v1_00.tsv.gz"
+
+(with larger datasets the training would run of course much longer)
+
+Athena runs on Presto:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/02_Create_Athena_Database.ipynb
+
+create athena database
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/03_Register_S3_TSV_With_Athena.ipynb
+
+now create table schemas
+
+- check the glue: https://us-west-2.console.aws.amazon.com/glue/home?region=us-west-2#table:name=amazon_reviews_tsv;namespace=dsoaws
+
+- https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/03_Register_S3_TSV_With_Athena.ipynb
+
+trick: how to convert TSV to Parquet (colum sized access; amazon format)
+todo: image 12_parquet
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/04_Convert_S3_TSV_To_Parquet_With_Athena.ipynb
+especially look at: "statement = 'MSCK REPAIR TABLE {}.{}'.format(database_name, table_name_parquet)"
+
+another nice tool: DataWrangler (open source tool); built upon pandas
+- https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/04_ingest/05_Query_Data_With_AWS_DataWrangler.ipynb
+makes it easier to pull in data to AWS
+
+image. 13_ranAll.png
 
