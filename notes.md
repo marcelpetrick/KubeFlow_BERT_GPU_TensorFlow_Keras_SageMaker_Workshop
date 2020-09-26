@@ -4,6 +4,9 @@ sending from germany, düsseldorf
 - part of an upcoming o reilly book
 data science on AWS, early 2012
 
+## Definitely to read:
+https://assets.amazon.science/e8/8b/2366b1ab407990dec96e55ee5664/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale.pdf
+
 ## hosts:
 - Antje Barth; Dev for machine learning for AWS- co founder of düsseldorf chapter of "Women in big data"
 - Chris Fregly; second host; from SF (USA); moch smoke today ..
@@ -846,6 +849,16 @@ question: does an ML engineer know everything what was shown today? definitely n
 
 - KubeFlow runs atop Kubernetes
 - Kubernetes can scale; also supports GPU
+
+-----------------------------------
+
+from SageMaker now to KubeFlow
+- see: ![](37_kubeflow.png)
+
+- read this: https://aws.amazon.com/blogs/opensource/enterprise-ready-kubeflow-securing-and-scaling-ai-and-machine-learning-pipelines-with-aws/
+
+
+
 
 
 
