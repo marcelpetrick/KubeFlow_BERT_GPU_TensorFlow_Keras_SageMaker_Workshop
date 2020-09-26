@@ -610,7 +610,85 @@ for the BERT model the length has to be checked before
 processing job with spark:
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/05_explore/02_Analyze_Data_Quality_ProcessingJob_Spark.ipynb
 
-how to write "unt tests" for the sets
+--> how to write "unt tests" for the sets
+
+------------
+(TODO)
+meanwhile: the auopilot training has finished (see https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/02_Train_Reviews_Autopilot.ipynb ) , now the predict command for the autopilot can be run!
+------------
+
+back to "02_anaylze .."
+- lib called Deequ
+- see the two links there about origins and explanations
+if tehre are no data quality checks at the start of the pipeline, then you are wasting energy and processing power
+- therefore data quality checks are ncessary; if the upstream app is failing
+- if for instance after a new deployment of an app the customer id would be missing, then this would be some desaster for the pipeline
+- automatically creating a spark cluster, torbn down at the end; no ned to fumble with spark code: wow
+- pyspark (instead of Scala)
+- native pyspark impl coming soon; currently scala based
+- therefore first step is necessary: !pygmentize preprocess-deequ.py
+- hyperloglog; right shift?
+- adding some analyzers (see AnalyzerContext)
+- having some domian-knowledge helps to define those specific constraints
+- adding Checks helps: star_rating, etc ...
+- in the notebook are also hints how to run serverless spark
+
+- readymade s3 docker image; optimized for security and network speed; currently no encryption, because public data sets
+- job took 8 minutes
+- see SageMaker "processing jobs"
+- image: 19_reviewchecks.png (todo) - it worked, all succeeded
+
+- flink or beam should be some replacements; but deequ just supports spark (?) from discussions
+
+explore "done"; now "prepare":
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/06_prepare/00_Overview.ipynb
+
+20_overview.png
+
+- BERT is a pretrained model; we do the fine tuning of the parameters
+- patent bert, healthcare berts, spanish bert, .. lots of different versions for different domains; stock BERT models might not work; but there are other ones
+- therefore the raw text has to be transformed for BERT embeddings
+- no need and time to pretrain BERT!
+- trained on thousands of GPU, snapshot was taken; training took lots of time and ressources and splots of data! linkedin has their own bert model
+
+now: https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/06_prepare/01_Prepare_Dataset_BERT_Scikit_AdHoc.ipynb
+
+image: 21_bert.png
+
+DistilBert: using transformers from DistilBerttokenizer
+- breaking up sentences in tokens (stemming, lemmitization)
+- pytorch does not know anything about tfrecord (super fast and optimized)
+- bert model does need four things to work: input-ids, input mask, segment ids, label ids
+
+
+image: 22.png
+todo check this and the url within!
+"Feature Transformation with Amazon a SageMaker Processing Job and Scikit-Learn
+Presentation Deep-Dive on BERT: https://speakerdeck.com/antje/visualize-bert-attention
+
+Typically a machine learning (ML) process consists of few steps. First, gathering data with various ETL jobs, then pre-processing the data, featurizing the dataset by incorporating standard techniques or prior knowledge, and finally training an ML model using an algorithm.
+
+Often, distributed data processing frameworks such as Scikit-Learn are used to pre-process data sets in order to prepare them for training. In this notebook we'll use Amazon SageMaker Processing, and leverage the power of Scikit-Learn in a managed SageMaker environment to run our processing workload."
+
+---------
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/06_prepare/02_Prepare_Dataset_BERT_Scikit_ScriptMode.ipynb
+
+- just a scikit processing job
+- "!pygmentize preprocess-scikit-text-to-bert.py"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
