@@ -1,0 +1,2 @@
+# KubeFlow_BERT_GPU_TensorFlow_Keras_SageMaker_Workshop
+notes for the todays KubeFlow_BERT_GPU_TensorFlow_Keras_SageMaker_Workshop
