@@ -1,4 +1,4 @@
-# Notes for workshop: [todo put name]
+# Notes for workshop: "[Full Day Workshop] Kubeflow + BERT + GPU + TensorFlow + Keras + SageMaker"
 
 sending from germany, düsseldorf
 - part of an upcoming o reilly book
@@ -12,7 +12,7 @@ https://assets.amazon.science/e8/8b/2366b1ab407990dec96e55ee5664/amazon-sagemake
 - Chris Fregly; second host; from SF (USA); moch smoke today ..
 
 ## important!
-data-science-on-aws/workshop is the public repo (github)
+data-science-on-aws/workshop is the public repo (github) - already cloned
 
 add: 3_workshop_agenda.png
 
@@ -857,9 +857,15 @@ from SageMaker now to KubeFlow
 
 - read this: https://aws.amazon.com/blogs/opensource/enterprise-ready-kubeflow-securing-and-scaling-ai-and-machine-learning-pipelines-with-aws/
 
+- read this:
+https://stackshare.io/stackups/kubeflow-vs-mlflow
 
+- read: https://medium.com/weareservian/the-cheesy-analogy-of-mlflow-and-kubeflow-715a45580fbe#:~:text=MLflow%20is%20a%20single%20python,Each%20has%20its%20place
 
+- definitely read:
+https://plan.io/blog/what-are-okrs/
 
+(end: 00:50 Sunday)
 
-
+https://aws.amazon.com/free/?nc2=h_ql_pr_ft&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all&awsm.page-all-free-tier=1
 
