@@ -499,4 +499,35 @@ https://s3.console.aws.amazon.com/s3/buckets/sagemaker-us-west-2-034358165284/mo
 
 check the candidate processors: that are notebooks: dpp0.py to dpp2.py
 
+those notebooks are also copied automatically to your workshop-space!
+see: https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/notebooks/SageMakerAutopilotCandidateDefinitionNotebook.ipynb
+(but don't run)
+
+- autopilot identified it as mulitclass class problem
+- also gave hints: what to do with it
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/notebooks/SageMakerAutopilotCandidateDefinitionNotebook.ipynb
+also gives hints how to recreate the environment!
+
+- dpp0-xgboost (xgboost as algorithm, which was picked)
+- dpp1-xgboost has slightly different preprocessing step, but is similar
+
+(not sure if i copied this: TODO read
+https://assets.amazon.science/e8/8b/2366b1ab407990dec96e55ee5664/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale.pdf
+)
+
+---------------------
+
+todo read this:
+https://www.amazon.science/publications/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale (this shall explain a lot)
+
+![](10_comprehend.png)
+
+augmented AI:
+- use "human loop" when "comprehend" does give unthrustworthy results (confidence too low) (by amazon mechanical turk) ... wow, this is crazy!
+- or by your own workforce (team mebers or yourself)
+
+(10 minute break)
+
+then: workshop/04_ingest/
 
