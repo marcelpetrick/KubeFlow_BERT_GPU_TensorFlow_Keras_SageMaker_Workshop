@@ -709,17 +709,42 @@ scikit-learn cheatsheet: where to start
 todo: check this!
 image: 25.png
 
+image: 26_train.png
 
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/07_train/02_Train_Reviews_BERT_Transformers_TensorFlow_ScriptMode.ipynb
 
+track the experiments
 
+(now, after some 30 minutes the training of the second notebook finished! uploading data now)
 
+image: 27_sagemaker_metrics.png
+sagemaker is tracking the output from docker containers
 
+custom regex for pulling out the data:
+"metrics_definitions = [
+     {'Name': 'train:loss', 'Regex': 'loss: ([0-9\\.]+)'},
+     {'Name': 'train:accuracy', 'Regex': 'accuracy: ([0-9\\.]+)'},
+     {'Name': 'validation:loss', 'Regex': 'val_loss: ([0-9\\.]+)'},
+     {'Name': 'validation:accuracy', 'Regex': 'val_accuracy: ([0-9\\.]+)'},
+]"
 
+---------
+attention: Spot instances for saving costs; but if one instance fails, then checkpointing shall be used!
 
+"!pygmentize src/tf_bert_reviews.py"
+- setting several hyper parameters
 
+- todo: check what a confusion matrix is
 
+graphs at:
+https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2#/jobs/tensorflow-training-2020-09-26-18-47-24-349
+see image ![](28.png)
 
+ML is stochastic! not everyone fgets the same results!
 
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/08_optimize/00_Overview.ipynb
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/08_optimize/01_Hyper_Parameter_Tuning_Reviews_BERT_TensorFlow.ipynb
 
 
 
