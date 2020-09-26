@@ -11,3 +11,12 @@ data science on AWS, early 2012
 ## important!
 data-science-on-aws/workshop is the public repo (github)
 
+add: 3_workshop_agenda.png
+
+copied from slack:
+"git at https://github.com/data-science-on-aws/workshop
+GitHubGitHub
+data-science-on-aws/workshop
+AI and Machine Learning with Kubeflow, Amazon EKS, and SageMaker - data-science-on-aws/workshop
+"
+
