@@ -743,13 +743,35 @@ see image ![](28.png)
 ML is stochastic! not everyone fgets the same results!
 
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/08_optimize/00_Overview.ipynb
+- why not apply ML to a ML problem?
+- bayesian search for a regression problem; finding the proper weiths in a model is similar to the hyperpüaramter problem
+(see: Optimize models using automatic model tuning)
 
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/08_optimize/01_Hyper_Parameter_Tuning_Reviews_BERT_TensorFlow.ipynb
 
+ahh, run this before! https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/07_train/03_Convert_BERT_Transformers_TensorFlow_To_PyTorch.ipynb
 
+finding the proper hyperparamters is always a bit of a challenge! and a science in itself
 
+- but there are services to find good settings for your models
 
+"Using Warm Start
+Warm start configuration allows you to create a new tuning job with the learning gathered in a parent tuning job by specifying up to 5 parent tuning jobs. If a warm start configuration is specified, Automatic Model Tuning will load the previous [hyperparameter set, objective metrics values] to warm start the new tuning job. This means, you can continue optimizing your model from the point you finished your previous tuning job experiment."
 
+- optimizing the ranges does happen in parallel (if bayesian, then just one); random does not depend on the other job
+- training review: ![](29_tensorflow_training.png)
 
+---
+while the training continues; now to the deploy step
+
+see: https://workshop.notebook.us-west-2.sagemaker.aws/tree/workshop/09_deploy
+
+deploy model as an https endpoint
+- realtime preditctions as a rest api
+- pytorch container using torch-serve (?)
+
+example: fi the autopilot trainign finished:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/01_Invoke_SageMaker_Autopilot_Model_From_Athena.ipynb
+- this will be used here (from 02/02)
 
 
