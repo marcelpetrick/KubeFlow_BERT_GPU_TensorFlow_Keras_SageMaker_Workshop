@@ -696,6 +696,20 @@ image: 23_bert_training.png
 
 so 21:00 back!
 
+----------
+The workshop sandbox will be available for 1 hour after the end of the workshop.
+The workshop will be recorded and posted to https://youtube.pipeline.ai
+All code is available to reproduce after this workshop here:  https://github.com/data-science-on-aws/workshop
+----------
+image: 24_pipeline.png
+
+it would also be possible to bring own container for security reasons into sagemaker
+
+scikit-learn cheatsheet: where to start
+todo: check this!
+image: 25.png
+
+
 
 
 
