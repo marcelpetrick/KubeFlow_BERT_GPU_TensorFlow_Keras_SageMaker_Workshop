@@ -775,5 +775,14 @@ https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/0
 - this will be used here (from 02/02)
 - how can this AutoPilot model now be invoked from Athena?
 
+- https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/02_Deploy_Reviews_BERT_PyTorch_REST_Endpoint.ipynb
+- wow, this creates also a docker-image!
 
+- deployment with tensorflow: https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/03_Deploy_Reviews_BERT_TensorFlow_REST_Endpoint.ipynb
+
+![](31_perform_band_test_reviews.png)
+
+multi arm bandit model will learn which model to serve over time
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/04_Perform_Bandit_Test_Reviews_BERT_TensorFlow_REST_Endpoints.ipynb
+1[](32_multiarm.png)
 
