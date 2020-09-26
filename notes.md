@@ -575,3 +575,43 @@ makes it easier to pull in data to AWS
 
 image. 13_ranAll.png
 
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/05_explore/00_Overview.ipynb
+
+14_explore.png
+
+two terms: "running something .."
+- "ad hoc": prototyping in notebook; SageMaker Notebooks
+- "at scale": (Chris) Cloud comes in; scale across any data set; SageMaker Processing Job
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/05_explore/01_Visualize_Reviews_Dataset.ipynb
+
+15_rating.png
+
+with SQL query
+
+average rating: 16 image (todo)
+
+rating: gift card best; software worst
+
+a made up assumption: "3. When did each product category become available in the Amazon catalog based on the date of the first review?¶"
+- is this a valid assumption?
+
+"4. What is the breakdown of ratings (1-5) per product category?¶"
+- process, then diasplay as "Prepare for Stacked Percentage Horizontal Bar Plot Showing Proportion of Star Ratings per Product Category¶"
+
+17_breakdown.png
+
+18_review.png
+(Chris may by Shania Twain's biggest fan: 110 views of a dvd)
+
+for the BERT model the length has to be checked before
+- pandas_cursor (?)
+
+processing job with spark:
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/05_explore/02_Analyze_Data_Quality_ProcessingJob_Spark.ipynb
+
+how to write "unt tests" for the sets
+
+
+
+
