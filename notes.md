@@ -786,3 +786,20 @@ multi arm bandit model will learn which model to serve over time
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/04_Perform_Bandit_Test_Reviews_BERT_TensorFlow_REST_Endpoints.ipynb
 1[](32_multiarm.png)
 
+"Multi-Armed Bandits and Reinforcement Learning with Amazon SageMaker
+We demonstrate how you can manage your own contextual multi-armed bandit workflow on SageMaker using the built-in AWS Reinforcement Learning Container container to train and deploy contextual bandit models. We show how to train these models that interact with a live environment (using a simulated client application) and continuously update the model with efficient exploration.
+
+Why Contextual Bandits?
+Wherever we look to personalize content for a user (content layout, ads, search, product recommendations, etc.), contextual bandits come in handy. Traditional personalization methods collect a training dataset, build a model and deploy it for generating recommendations. However, the training algorithm does not inform us on how to collect this dataset, especially in a production system where generating poor recommendations lead to loss of revenue. Contextual bandit algorithms help us collect this data in a strategic manner by trading off between exploiting known information and exploring recommendations which may yield higher benefits. The collected data is used to update the personalization model in an online manner. Therefore, contextual bandits help us train a personalization model while minimizing the impact of poor recommendations."
+
+---------------------
+level 10: build ML pipelines
+see as well: !()[https://github.com/aws/aws-step-functions-data-science-sdk-python]
+AWS step functions
+
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/10_pipeline/01_Create_Pipeline_Train_and_Deploy_Reviews_BERT_TensorFlow.ipynb
+
+(5 min break): start the KubeFlow cluster thing before
+
+
+
