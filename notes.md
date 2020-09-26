@@ -59,10 +59,21 @@ create a new instance, notebook, not the studio
 ---------
 "Success! Your notebook instance is being created.
 Open the notebook instance when status is InService and open a template notebook to get started.
-View details
+View details"
 ---------
 
-"
+* use "open jupyter" (not jupyter lab)
+
+* new > terminal window
+
+* $ cd ~/SageMaker && git clone https://github.com/data-science-on-aws/workshop
+
+* open the "workshop" dir
+
+* open: https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/01_setup/00_Overview.ipynb
+
+* 
+
 
 
 
