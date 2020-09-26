@@ -450,5 +450,32 @@ https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/0
 "amazon customer reviews dataset"
 * over 130 mio customer reviews; public data set
 * https://s3.amazonaws.com/amazon-reviews-pds/readme.html
+* reviews from 20 years: 1995 to 2015
+* TSV file format (tab); also in Parquet
+
+* load and read the data with pandas (step 16)
+102.000 reviews ..
+* verry unbalanced data set; if the model would be trained like this, then the model would be really unbalanced* next step therefore: balance the data set: resamling
+- take the 2 star-category; downsample all categories
+- (downsamling better thant upsampling here)
+- while training: alway keep some holdout data set: 90 percent, 10 percent split
+
+- "Write a Train CSV with Header for Autopilot¶"
+
+-------------
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/02_Train_Reviews_Autopilot.ipynb
+run all will take 24 minutes ..
+
+"Train a Model with SageMaker Autopilot
+We will use Autopilot to predict the star rating of customer reviews. Autopilot implements a transparent approach to AutoML.
+
+For more details on Autopilot, have a look at this Amazon Science Publication
+https://assets.amazon.science/e8/8b/2366b1ab407990dec96e55ee5664/amazon-sagemaker-autopilot-a-white-box-automl-solution-at-scale.pdf
+
+Introduction
+Amazon SageMaker Autopilot is a service to perform automated machine learning (AutoML) on your datasets. Autopilot is available through the UI or AWS SDK. In this notebook, we will use the AWS SDK to create and deploy a text processing and star rating classification machine learning pipeline."
+
+
+
 
 
