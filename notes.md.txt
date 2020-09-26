@@ -1,0 +1,13 @@
+# Notes for workshop: [todo put name]
+
+sending from germany, düsseldorf
+- part of an upcoming o reilly book
+data science on AWS, early 2012
+
+## hosts:
+- Antje Barth; Dev for machine learning for AWS- co founder of düsseldorf chapter of "Women in big data"
+- Chris Fregly; second host; from SF (USA); moch smoke today ..
+
+## important!
+data-science-on-aws/workshop is the public repo (github)
+
