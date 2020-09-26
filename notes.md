@@ -476,6 +476,27 @@ Introduction
 Amazon SageMaker Autopilot is a service to perform automated machine learning (AutoML) on your datasets. Autopilot is available through the UI or AWS SDK. In this notebook, we will use the AWS SDK to create and deploy a text processing and star rating classification machine learning pipeline."
 
 
+- expected result has to be set: "'TargetAttributeName': 'star_rating'" but no other things like type 
 
+"[INFO] You already created 0 Autopilot job(s) in this account.
+[INFO] There are currently 0 Autopilot job(s) actively running.
+"
+good! else we run into a problem
+
+%store - jupyter magic command: store variables in a local variable instance database
+- this can be retrieved in the next instance; very simple key-value-store
+
+"[OK] Autopilot Job automl-dm-26-16-08-27 created."
+
+review processing jobs:
+https://us-west-2.console.aws.amazon.com/sagemaker/home?region=us-west-2#/processing-jobs/
+
+CPU times: user 296 ms, sys: 45.6 ms, total: 341 ms
+Wall time: 8min 2s
+
+the generated bucket:
+https://s3.console.aws.amazon.com/s3/buckets/sagemaker-us-west-2-034358165284/models/autopilot/automl-dm-26-16-08-27/sagemaker-automl-candidates/pr-1-3767dffabf104efdba0df9cc535e394310d5e2c11e224cd1855a777411/?region=us-west-2
+
+check the candidate processors: that are notebooks: dpp0.py to dpp2.py
 
 
