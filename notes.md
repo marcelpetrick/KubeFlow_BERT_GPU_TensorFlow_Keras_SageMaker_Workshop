@@ -427,3 +427,28 @@ automated machine learning?!?
 ususally the least needed privilege is the one to use for working with AWS ..
 "[OK] You are all set up to continue with this workshop!"
 ---------
+
+
+now the real fun:
+>> https://workshop.notebook.us-west-2.sagemaker.aws/tree/workshop/02_automl
+
+- find the right task: regression? classification? also built-in algos within SageMaker
+- just add modelcode in preferred framework
+- maybe some help in identifying the task!
+- auto generate the code to do the feature engineering
+- present us the best performing candidates
+- two sides: help people who dont have much experience in building models; but also if exper. engineer, then automated ML to offload the task. to have some baseline! see the results and start to work from this
+--> sagemaker autopilot (check this! TODO)
+
+S3 bucket; sagemaker will look at the data and decide which type (class. or regression); then automatically choose and train .. (with a list of best performing model candidates)
+
+let's do this ..
+
+start the first notebook!
+https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/02_automl/01_Prepare_Dataset_Autopilot.ipynb
+
+"amazon customer reviews dataset"
+* over 130 mio customer reviews; public data set
+* https://s3.amazonaws.com/amazon-reviews-pds/readme.html
+
+
