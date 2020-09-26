@@ -773,5 +773,7 @@ deploy model as an https endpoint
 example: fi the autopilot trainign finished:
 https://workshop.notebook.us-west-2.sagemaker.aws/notebooks/workshop/09_deploy/01_Invoke_SageMaker_Autopilot_Model_From_Athena.ipynb
 - this will be used here (from 02/02)
+- how can this AutoPilot model now be invoked from Athena?
+
 
 
